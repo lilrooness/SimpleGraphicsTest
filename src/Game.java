@@ -8,6 +8,7 @@ public class Game {
 	public Game(){
 		imgBank = new ImageBank();
 		imgBank.loadImage("background", "background.jpg");
+		imgBank.loadImage("logo","logo.PNG");
 	}
 	
 	/**
@@ -17,5 +18,6 @@ public class Game {
 	 */
 	public void tick(Graphics2D g2d){
 		g2d.drawImage(imgBank.getImage("background"), 0, 0, null);
+		g2d.drawImage(imgBank.getImage("logo"), 250, 255, null);
 	}
 }
